@@ -1,0 +1,204 @@
+/*Reseteamos todos los autoformatos de la pagina*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+/*Configura la etiqueta body de la pagina*/
+body{
+	background: #737881; /*Coloca un color de fondo a la pagina*/
+}
+
+.encabezado{
+	text-align: center;
+	margin: 50px 0px;
+}
+
+.titulo{
+	padding: 15px;
+	width: 30vw;
+	margin: auto;
+	color:white;
+}
+
+.agregado{
+	text-align: center;
+}
+
+.pantalla{
+	text-align: center;
+}
+
+.btn{
+	border: 0;
+	color: white;
+	font-weight: bold;
+	background-color: #202020;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 0.5em;
+}
+
+.text-input{
+	border-radius: 0.5em;
+	border: 1px solid rgba(0,0,0,0.2);
+	display: block;
+	padding: 0.5em;
+	width: 30%;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+footer{
+	/*Ancho footer*/
+	width: 100%;
+	/*Color de fondo footer*/
+	background: #202020;
+	/*Color de letra footer*/
+	color: white;
+	margin-top: 20px;
+
+}
+
+.container-footer-all{
+	/*Ancho para el contenedor total del footer*/
+	width: 100%;
+	/*Ancho maximo para el contenedor total del footer*/
+	max-width: 1200px;
+	/*Margen siempre centrado para el contenedor total del footer*/
+	margin: auto;
+	padding: 40px;
+
+}
+
+.container-body{
+	/*Para que todos los div contenidos en container-body esten uno al lado del otro*/
+	display: flex;
+	/*Centramos todos los contenidos de container-body*/
+	/*justify-content: center;*/
+	/*Todos los elementos ocupen el 100% de espacio dado por container-body*/
+	justify-content: space-between;
+}
+
+.columna1{
+	max-width: 400px;
+}
+
+.columna1 h1{
+	/*Tamaño de fuente para el h1 de la columna1*/
+	font-size: 22px;
+}
+
+.columna1 p{
+	/*Tamaño de fuente para el p de la columna1*/
+	font-size: 14px;
+	/*Color de fuente para el p de la columna1*/
+	color: #C7C7C7;
+	/*Margen superior para el p de la columna1*/
+	margin-top: 20px;
+}
+
+.columna2{
+	max-width: 400px;
+}
+
+.columna2 h1{
+	font-size: 22px;
+}
+
+.columna2 .row{
+	margin-top: 15px;
+	display: flex;
+}
+
+.row img{
+	width: 36px;
+	height: 36px;
+}
+
+.row label{
+	margin-top: 8px;
+	margin-left: 20px;
+	color: #C7C7C7;
+}
+
+.columna3{
+	max-width: 400px;
+}
+
+.columna3 h1{
+	font-size: 22px;
+}
+
+.row2{
+	margin-top: 20px;
+	display: flex;
+}
+
+.row2 img{
+	width: 36px;
+	height: 36px;
+}
+
+.row2 label{
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 150px;
+}
+
+.container-footer{
+	width: 100%;
+	background: #101010;
+}
+
+.piedepagina{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.copyright{
+	color: #C7C7C7;
+}
+
+.copyright a{
+	/*Quita el sibrayado del hipervinculo*/
+	text-decoration: none;
+	/*Color fuente*/
+	color: white;
+	/*Negrita a la fuente*/
+	font-weight: bold;
+
+}
+
+.information a{
+	text-decoration: none;
+	color: black;
+	/*color: #C7C7C7;*/
+
+}
+
+/*responsive con mediaquery*/
+
+@media screen and (max-width: 900px){
+	.container-body{
+		/*cuando llega a los 900 de ancho se pone todo en bloque*/
+		/*display:block;*/
+		/*cuando llega a los 900 comienza de apoco a reordenarse hasta llegarse a hacer un bloque*/
+		flex-wrap: wrap;
+	}
+
+	.columna1{
+		max-width: 100%;
+	}
+	.columna2, .columna3{
+		margin-top: 40px;
+	}
+}
